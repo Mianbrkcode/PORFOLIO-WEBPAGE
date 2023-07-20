@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- font-awesome cdn icons -->
+  <title>My portfolio | about</title>
+  <style>
+
+
+
+  </style>
+
+</head>
+<body>
+   <div class="hero-header">
+      <div class="wrapper">
+          <header>
+              <div class="logo">
+                  <i class="fa-solid fa-m"></i>
+                  <div class="logo-text">MCD</div>
+              </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+          </header>
+          <!-- content here -->
+
+          <div class="about">
+	
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="about-col-1">
+                        
+                        <img src="images/aboutphoto.jpg">
+        
+                    </div> 
+        
+                    <div class="about-col-2"> 
+                        <h1 style="color: aqua;" class="sub-title">About Me</h1>
+                        <p class="about-description">
+                            Im, an ambitious and creative individual, embarked on the journey to become a front-end developer with a fervent passion for crafting captivating user experiences on the digital canvas. Fascinated by the seamless fusion of technology and design, you sought to bridge the gap between form and function, translating intricate ideas into visually stunning and interactive websites and applications. Eager to influence the way users interact with the virtual world, you embraced the challenge of mastering various programming languages and frameworks, determined to make a positive impact on the online landscape and inspire a sense of delight in every user who engages with your creations.
+                        </p>
+                        <div class="data">
+                            <a href="#contact" class="hire">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <!-- contact -->
+        <div id="contact">
+        
+            <div class="container" style="width: 100%;
+            margin: none;">
+                
+                <div class="row">
+                    <div class="contact-left" style="color: #f0eced;">
+                        
+                        <h1 class="sub-title" style="color: aqua;">Contact Name</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>Mian Christopher Dimatulac</p>
+                        <p><i class="fa-solid fa-phone"></i>09289837585</p>
+                        <p><i class="fa-solid fa-envelope"></i>mianchristopherdimatulac@outlook.com</p>
+        
+                        <div class="social-icons">
+                            
+                            <a href="https://www.facebook.com/Mian.Dimatulac2308/"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+        
+                    </div>
+                    <div class="contact-right">
+                        
+                        <form name="submit-to-google-sheet">
+                            
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        
+                        <button type="submit" class="btn btn2">Submit</button>
+        
+                        </form>
+                        <span id="msg"> </span>
+                    </div>
+        
+                    
+                </div>
+        
+            </div>
+           <div style="color: aqua;" class="copyright">
+               
+               <p>Copyright Ⓒ Mian Christopher Dimatulac. COMP 20133 Final Requirement</p>
+        
+           </div>
+        </div>
+
+      </div>
+   </div>
+
+   
+    
+
+
+   <!-- typed for js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+   <script>
+      // creating button click nav bar
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+      var links=document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      })
+
+      var typed=new Typed(".input", {
+          strings:["Front-end Developer", "UX designer" , "Web Developer"],
+          typedSpeed:70,
+          backSpeed:55,
+          loop:true
+      })
+   </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- font-awesome cdn icons -->
+  <title>My portfolio | Skills</title>
+
+
+
+</head>
+<body>
+   <div class="hero-header">
+      <div class="wrapper">
+          <header>
+              <div class="logo">
+                  <i class="fa-solid fa-m"></i>
+                  <div class="logo-text">MCD</div>
+              </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+          </header>
+          <div style="color: white; text-align: center;">
+            <h1>My skills</h1>
+          </div>
+
+          <div class="skills">
+
+            <div class="container">
+              
+              <div class="ambition-list">
+                
+                <div class="skill-pic">
+                  
+                  <img src="images/pexels-canva-studio-3153198.jpg">
+         
+                  <div class="layer">
+                    <h3>Collaboration Skills</h3>
+                    <p>I can work well with others.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                  </div>
+         
+                </div>
+         
+                <div class="skill-pic">
+                  
+                  <img src="images/pexels-cottonbro-studio-4709285.jpg">
+                  <div class="layer">
+                    <h3>To be Finacially Free</h3>
+                    <p>I know the fundamentals on some programming languages like HTML, CSS, and Javascript</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                  </div>
+                </div>
+         
+                <div class="skill-pic">
+                  
+                  <img src="images/pexels-lukas-590022.jpg">
+                  <div class="layer">
+                    <h3>Analyzing skills</h3>
+                    <p>Good in analyzing the logics</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                  </div>
+                </div>
+         
+         </div>
+
+      </div>
+   </div>
+
+   <!-- skills content -->
+    
+
+
+   <!-- typed for js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+   <script>
+      // creating button click nav bar
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+      var links=document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      })
+
+      var typed=new Typed(".input", {
+          strings:["Front-end Developer", "UX designer" , "Web Developer"],
+          typedSpeed:70,
+          backSpeed:55,
+          loop:true
+      })
+   </script>
+</body>
+</html>

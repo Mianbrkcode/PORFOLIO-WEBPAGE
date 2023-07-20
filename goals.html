@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- font-awesome cdn icons -->
+  <title>My portfolio | Goals</title>
+
+</head>
+<body>
+   
+   <div class="hero-header">
+      <div class="wrapper">
+          <header>
+              <div class="logo">
+                  <i class="fa-solid fa-m"></i>
+                  <div class="logo-text">MCD</div>
+              </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+          </header>
+
+          <div style="color: #fff;text-align: center;">
+                <h1>My Goals</h1>
+            </div>
+          <div class="goals-bdy">
+            <div class="goal-container">
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="images/pexels-binyamin-mellish-106399.jpg">
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h2>Comfortable House</h2>
+                      <p>Ill wanna have peaceful workplace at home.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="images/pexels-karolina-grabowska-4386431.jpg">
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h2>Earn More Money</h2>
+                      <p>A dream of everybody is to be financially stable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="images/pexels-luis-gomes-546819.jpg">
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h2>Invest to improve my skills</h2>
+                      <p>This skill will brings me everywhere.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="imgBx">
+                    <img src="images/pexels-gustavo-fring-4148842.jpg">
+                  </div>
+                  <div class="content">
+                    <div>
+                      <h2>Happy Family</h2>
+                      <p>Peacefully living with my beloved family.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+      </div>
+   </div>
+
+
+
+
+  
+
+
+
+   <!-- typed for js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+   <script>
+      // creating button click nav bar
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+      var links=document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      })
+
+      var typed=new Typed(".input", {
+          strings:["Front-end Developer", "UX designer" , "Web Developer"],
+          typedSpeed:70,
+          backSpeed:55,
+          loop:true
+      })
+   </script>
+</body>
+</html>
+
+
+
+
+

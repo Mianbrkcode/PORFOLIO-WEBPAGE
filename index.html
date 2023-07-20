@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- font-awesome cdn icons -->
+  <title>My portfolio | Homepage</title>
+</head>
+<body>
+   <div class="hero-header">
+      <div class="wrapper">
+          <header>
+              <div class="logo">
+                  <i class="fa-solid fa-m"></i>
+                  <div class="logo-text">MCD</div>
+              </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+          </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img style="width: 300px; height: 300px;" src="images/bg0-1.jpg" alt="pic1">
+                </div>
+                  <div class="hero-text">
+                      <h5> Hi I'm <span class="input">Front-end Developer</span></h5>
+                      <h1>Mian Christopher Dimatulac</h1>
+                      <p>Hello, I am a passionate and aspiring front-end developer, eagerly embarking on a journey to shape the digital landscape with creativity and innovation. With a strong foundation in HTML, CSS, and JavaScript, I am driven by the desire to craft immersive and user-friendly web experiences that captivate and delight users. Continuously seeking to expand my skillset and stay updated with the latest trends in web development, I am committed to refining my expertise to build responsive, visually stunning, and accessible websites. Equipped with a keen eye for design and a penchant for problem-solving, I am excited to contribute my talents to the ever-evolving world of technology and make a meaningful impact through my work as a front-end developer.</p>
+                        
+                        <div class="btn-group">
+                            <a href="images/resume-sample.pdf" class="btn active" download="">Download CV</a>
+                            <a href="about.html" class="btn">Contact</a>
+                        </div>
+
+                        <div class="social">
+                            <a href="https://www.facebook.com/Mian.Dimatulac2308"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/mian-christopher-dimatulac-b63592272/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                  </div>
+            </div>
+      </div>
+   </div>
+   <!-- typed for js  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+   <script>
+      // creating button click nav bar
+      var togglebtn=document.querySelector(".togglebtn");
+      var nav=document.querySelector(".navlinks");
+      var links=document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      })
+
+      var typed=new Typed(".input", {
+          strings:["Front-end Developer", "UX designer" , "Web Developer"],
+          typedSpeed:70,
+          backSpeed:55,
+          loop:true
+      })
+   </script>
+</body>
+</html>
